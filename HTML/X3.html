@@ -1,0 +1,74 @@
+<!-- Compulsory Task -->
+<!DOCTYPE html>
+<!-- This will tell the browser which version of html to use. -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Metadata will be contained under head -->
+    <title>X3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- This is a style sheet that opens the css file. -->
+    <link rel="stylesheet" type="text/css" href="../CSS/CatalogueStyle.css">
+    <link rel="icon" href="../Images/BMWfav.png" type="image/png" sizes="16x16">
+    <!-- This is closing the head -->
+</head>
+
+<body onload="setbackground();">
+    <header>
+        <!-- This is the heading of the page.  -->
+        <h1 id="mainHeading">Welcome to IMO BMW<a href="../Catalogue.html"><img src="../Images/SDP.jpg" height="100" width="auto" class="float-sm-right" class="img-fluid" alt="BMW Sheer Pleasure"></a></h1>
+    </header>
+    <!-- The 'img-fluid' function will allow the images to fit the size of the screen, eg. how much the page is zoomed in. The images will scale up or down to the prefered size. -->
+    <img id="mainPic" src="../Images/Logo.jpg" alt="BMW Logo" height="200" width="auto" class="img-fluid" />
+    <h4>Bayerische Motoren Werke | Bavarian Motor Works</h4>
+    <div class="bl1">
+        <a href="../HTML/Checkout.html" target="_blank"><img id="cart" src="../Images/cart.png" height="75" width="auto" class="float-sm-right" class="img-fluid" alt="BMW Cart" /></a>
+        <p class="bl1">Sheer<br>Driving Pleasure</p>
+    </div>
+    <nav>
+        <!-- These are the elements of the nav bar and are split by a '|' to show which is which. -->
+        <a href="../Catalogue.html" style="color:white">IMO</a> |
+        <a href="../Cars.html" style="color:white">Cars</a> |
+        <a href="../Us.html" style="color: white">About</a> |
+        <a href="../Landing Page.html" style="color: white">Landing Page</a> |
+    </nav>
+    <br>
+    <h1>BMW X3</h1>
+    <br>
+    <img class="car img-fluid" src="../Images/MX3.jpg" alt="BMW MX3" height="auto" width="1250" />
+    <br><br>
+    <div id="X3">
+        <h2>Freedom Intensified<br>The BMW X3 M40i</h2>
+        Sets your pulse racing: powered by an impressive 265 kW output and equipped with the unmistakable genes of the M Performance family, the BMW X3 M40i pushes the limits. Its breathtaking agility, high precision in handling and the extremely high driving stability on every surface make it the undisputed leader in its class. Powerful, dynamic and breathtakingly agile. The driving experience in the BMW X3 M40i combines pure performance with intensified driving pleasure. Optimised to master every challenge. All components of this vehicle are systematically designed for high performance. Outstanding steering characteristics, the sporty tuning of the M Sport suspension and the extremely dynamic all-wheel drive smoothly transfer the impressive performance of the engine to the road at all times. When needed, the M Sport brakes bring the concentrated power to a standstill in seconds. Experience the high-precision handling and maximum traction.
+        <h4>PRODUCES SIGNIFICANTLY HIGHER ADRENALINE LEVELS.</h4>
+        Uncompromising power and sheer acceleration. The M Performance TwinPower Turbo inline 6-cylinder petrol engine of the BMW X3 M40i catapults the vehicle from zero to one hundred in an impressive 4.8 seconds. A maximum torque of 500 Nm and the direct response of the engine create a completely new driving experience. Adrenaline kick included.
+        <h4><b><i>265 KW</i></b></h4>
+        Its claim? The maximum. The BMW X3 M40i combines everything that defines a high-performance character. It transfers the breathtaking engine output of 265 kW to every surface in such a smooth and agile manner – the noticeably precise interplay of specifically tuned steering and suspension characteristics and the intelligent BMW xDrive all-wheel drive system all make this possible. Yet one thing remains the same: where others reach their limits, the BMW X3 M40i still forges ahead.
+        <h4>A THRILLING SIGHT.</h4>
+        The BMW X3 M40i is instantly fascinating with its signature colour of Cerium Grey, which is reserved exclusively for the M Performance Automobiles. Among the inspiring features is the impressive front section with distinctive double kidney grille in Cerium Grey and enlarged air inlets. The rear inspires with powerful twin exhaust pipe finishers in Black Chrome on either side. Rounding off the thrilling overall impression are the colour accentuated mirror caps and optional 21” M light alloy wheels Double-spoke style 718 M.
+        <h4>THE EXCLUSIVE INTERIOR DESIGN OF THE BMW X3 M40I.</h4>
+        The interior of the BMW X3 M40i is an expression of its uncompromising performance standard. Before you even take a seat, the exclusive door sill finisher with M Performance model designation clearly draws attention to the vehicle’s sports DNA. The driver-oriented cockpit impresses with the short distance from the steering to all key functions. At the same time, all the information relevant to the driver appears on the ultra modern instrument panel with digital model designation. And the sport seats in high-grade leather are a constant source of inspiration with their perfect ergonomics and elegant sporty appearance. With their honed design, M Performance Automobiles demonstrate remarkable style combined with supreme athleticism and impress with a powerful drive that is among the highest performers in every model series. And they deliver fascinating driving dynamics without sacrificing comfort. BMW M Performance Automobiles. Or, in short: driving pleasure intensified.
+    </div>
+    <br>
+    <p>Below is the starting price of the vehicle.</p>
+    <button onclick="addItem13()" id="addCart" type="button" class="btn btn-primary btn-sm">R649 000.00</button>
+    <br><br><br><br>
+    <!-- This is the Java Script stylesheet for the buttons to work. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="../JS/Catalogue.js"></script>
+    <!-- This is acknowledgements for using pictures. -->
+    <h2>Acknowledgements:</h2>
+    <p><a href="https://www.bmw.co.za/en/index.html" target="_blank">BMW ZA</a></p>
+    <!-- This is a personal footer. -->
+    <footer>
+        <p> &copy; IMO BMW.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by <a href="../Catalogue.html">Imtiyaaz Moses</a></p>
+        <p>Last updated: 12 July 2019</p>
+    </footer>
+    <a class="btn" href="#mainHeading">Back To Top</a>
+</body>
+
+</html>

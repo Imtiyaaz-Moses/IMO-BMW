@@ -1,0 +1,28 @@
+/* The background colour will be Ghost White in colour. */
+body {
+    background-color: #A9A9A9;
+}
+
+/* The 'h1' headings will be Dark Blue in colour with a dodger blue background. 
+The text will be centered, in italics and in Times Roman. */
+h1 {
+    color: #00008B;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #1E90FF;
+    text-align: center;
+    font-style: italic;
+}
+
+/* The text colour will be Ivory with a Dark Turquoise background. Times Roman is the font and will be in italics. */
+p {
+    color: #FFFFF0;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #00CED1;
+    font-style: italic;
+    text-align: center;
+}
+
+nav {
+	color: #F5F5F5;
+	text-align: center;
+}

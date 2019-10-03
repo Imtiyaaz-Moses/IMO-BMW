@@ -1,0 +1,232 @@
+/* The main heading will be a smoked white colour, 
+'Times New Roman' in font and will have a sky blue background. 
+The heading will also be centered. */
+h1,
+h4,
+h5,
+#mainHeading {
+    color: #F5F5F5;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #87CEEB;
+    text-align: center;
+    font-style: italic;
+}
+
+/* The main picture will be stretched across the screen and will be centered. */
+#mainPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* This will make all the 'h3' headings in the center. */
+h2,
+h3 {
+    text-align: center;
+}
+
+/* This will make the image feint when the cursor is hovered over the image. */
+#cart:hover,
+#hover:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+/* This will center the paragraphs. */
+label,
+th,
+p {
+    border-style: dotted;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #87CEEB;
+    color: #191970;
+}
+
+/* The colour of the forms background will be grey. */
+form {
+    background-color: #D3D3D3;
+    text-align: left;
+}
+
+/* The background colour of the table row will be a sky blue. */
+tr {
+    background-color: #87CEEB;
+}
+
+/* The table data text will be dark blue. */
+td {
+    border-style: double;
+    color: #191970;
+}
+
+/* The images will have a grey shadow behind it. */
+#hover {
+    box-shadow: 5px 5px 2px #F5F5DC;
+}
+
+/* The navbar will have the colour White Smoke, the text will be centered and the background colour Sky Blue. */
+nav {
+    color: #F5F5F5;
+    text-align: center;
+    background-color: #87CEEB;
+}
+
+/* This is the the buttons that will collapse and be hovered. */
+.btn,
+#btn,
+#btn2,
+#btn3  {
+    background-color: #F5F5F5;
+    color: #16588E;
+    text-align: center;
+    border-color: #81C4FF;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* The hover button will change colour when hovered over. */
+.btn:hover {
+    color: #16588E;
+    border-color: #81C4FF;
+    background-color: #FF0000;
+}
+
+/* All the text below the images will be centered, a mint cream colour and arial in font. */
+#emo,
+#dmo,
+#deo,
+#dem,
+#demoS,
+#SGT,
+#MLi,
+#XM,
+#I8,
+#SC,
+#FSC,
+#I8R,
+#X3,
+#X6M,
+#M8 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #F5FFFA;
+    font-size: 15px;
+}
+
+/* The colour of the background will be Sky Blue, the font will arial, the text colour will be red and the text will center. */
+.unord {
+    background-color: #87CEEB;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF0000;
+    text-align: center;
+}
+
+/* The block will have a background colour that is Medium Blue, the font will be Red and the text will be bold. */
+.bl1 {
+    background-color: #0000CD;
+    color: #FF0000;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.cont {
+    border: 2px solid #F5FFFA;
+    background-color: #F5FFFA;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.cont::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.cont img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* The image icon will round and small. */
+.styl {
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+/* This will make the text bold. */
+.makebold {
+    font-weight: bold;
+}
+
+/* This will make the images centered and bigger. */
+.cc {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* The slideshow will be centered and the pictures will have a height of 600 piexels. The pictures on the other pages will also be the same. */
+.myslidess,
+.car {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 600px;
+}
+
+#cart {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#delivery_type {
+    display: block;
+    height: 50px;
+    background-color: #F5F5F5;
+    color: #16588E;
+    border-color: #81C4FF;
+}
+
+/* The headding of the accordion will be Trebuchet font. The text size will be 25 pixels, centered with a background colour of lime green. */
+dt {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    background-color: #7FFF00;
+}
+
+/* The text of the accordion will be centered, almond in colour and a background of grey. */
+dd {
+    text-align: center;
+    color: #FFEBCD;
+    background-color: #808080;
+}
+
+/* The image displayed will be displayed in the middle of the page. */
+#BMWM {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    font-weight: bold;
+    font-style: italic;
+    color: #F5F5F5;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #87CEEB;
+}

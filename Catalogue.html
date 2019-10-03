@@ -1,0 +1,610 @@
+<!-- Compulsory Task -->
+<!DOCTYPE html>
+<!-- This will tell the browser which version of html to use. -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Metadata will be contained under head -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+    }
+
+
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 2000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 11px
+        }
+    }
+    </style>
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- This is a style sheet that opens the css file. -->
+    <link rel="stylesheet" type="text/css" href="CSS/CatalogueStyle.css">
+    <link rel="icon" href="Images/BMWfav.png" type="image/png" sizes="16x16">
+    <!-- This is closing the head -->
+</head>
+
+<body onload="setbackground();">
+    <header>
+        <!-- This is the heading of the page.  -->
+        <h1 id="mainHeading">Welcome to IMO BMW<a href="Catalogue.html"><img src="Images/SDP.jpg" height="100" width="auto" class="float-sm-right" class="img-fluid" alt="BMW Sheer Pleasure"></a></h1>
+    </header>
+    <!-- The 'img-fluid' function will allow the images to fit the size of the screen, eg. how much the page is zoomed in. The images will scale up or down to the prefered size. -->
+    <img id="mainPic" src="Images/Logo.jpg" alt="BMW Logo" height="200" width="auto" class="img-fluid" />
+    <h4>Bayerische Motoren Werke | Bavarian Motor Works</h4>
+    <div class="bl1">
+        <a href="HTML/Checkout.html" target="_blank"><img id="cart" src="Images/cart.png" height="75" width="auto" class="float-sm-right" class="img-fluid" alt="BMW Cart" /></a>
+        <p class="bl1">Sheer<br>Driving Pleasure</p>
+    </div>
+    <nav>
+        <!-- These are the elements of the nav bar and are split by a '|' to show which is which. -->
+        <a href="Catalogue.html" style="color:white">IMO</a> |
+        <a href="Cars.html" style="color:white">Cars</a> |
+        <a href="Us.html" style="color: white">About</a> |
+        <a href="Landing Page.html" style="color: white">Landing Page</a> |
+    </nav>
+    <!-- This is a class to make the text bold. -->
+    <p class="makebold">
+        Below will is a catalogue list of the cars that are for sale.
+    </p>
+    <!-- This is an unordered list showing what items are for sale. -->
+    <ul class="unord">
+        <li>BMW M140i</li>
+        <li>BMW 2 Series Convertible</li>
+        <li>BMW M2 Competition Coupé</li>
+        <li>BMW M3 Competition Sport</li>
+        <li>BMW 4 Series Convertible</li>
+        <li>BMW M4 Competition Sport</li>
+        <li>BMW M5 Competition Sport</li>
+        <li>BMW 6 Series GT</li>
+        <li>BMW 7 Series M760Li xDrive</li>
+        <li>BMW M8</li>
+        <li>BMW i8 Coupé</li>
+        <li>BMW i8 Roadster</li>
+        <li>BMW X3</li>
+        <li>BMW X5M</li>
+        <li>BMW X6M</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <h3 style="color: #F5F5F5;
+    font-family: Times New Roman, Times, serif;
+    background-color: #87CEEB;
+    text-align: center;
+    font-style: italic;">Our Selection Consists Of:</h3>
+    <br>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img class="myslidess" src="Images/140IM1.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/140IM2.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/230IM.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/230IM2.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/M21.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/M23.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/M31.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/M32.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/430IM.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/430IM2.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/M41.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/M42.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/M51.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/M52.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/6SCGT.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/6SCGT1.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/7SC1.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/7SC2.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/M81.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/I81.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/I82.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/I8R1.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/I8R2.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/X32.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/X33.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/X5M1.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/X5M2.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/X65M.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/X6M X5M.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/X6M 2 X5M.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/X6M1.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="myslidess" src="Images/X6M2.jpg">
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000); // Change image every second.
+}
+</script>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <!-- The 'img-thumbnail' makes the image a thumbnail and it'll become smaller. It'll also have a round border around the image. -->
+                <img id="hover" class="rounded-circle img-thumbnail rounded img-fluid" src="Images/140IM.jpg" alt="BMW M140i" height="200" width="auto" />
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#emo"><a href="HTML/M140i.html" target="_blank">M140i</a></button>
+            </div>
+            <div class="col-sm">
+                <img id="hover" class="rounded-circle img-thumbnail img-fluid" src="Images/2SC.jpg" alt="BMW 2 Series" height="200" width="auto" />
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#SC"><a href="HTML/2 Series.html" target="_blank">2 Series</a></button>
+            </div>
+            <!-- The column of the grid will be small and will have pictures and text in it. The image will be round and be thumbnail. -->
+            <div class="col-sm">
+                <img id="hover" class="rounded-circle img-thumbnail img-fluid" src="Images/M2.jpg" alt="BMW M2" height="200" width="auto" />
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#dmo"><a href="HTML/M2.html" target="_blank">M2 CS</a></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- This is opening the grid again. -->
+    <div class="container">
+        <div class="row">
+            <!-- The column of the grid will be small and will have pictures and text in it. The image will be round and be thumbnail. When hovered over it will turn to a feint colour. -->
+            <div class="col-sm">
+                <img id="hover" class="img-thumbnail img-fluid" src="Images/M3.jpg" alt="BMW M3" height="200" width="auto" />
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#deo"><a href="HTML/M3.html" target="_blank">M3 CS</a></button>
+            </div>
+            <!-- This is opening the grid again. -->
+            <div class="col-sm">
+                <img id="hover" class="img-thumbnail img-fluid" src="Images/4SC.jpg" alt="BMW 4 SC" height="200" width="auto" />
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#FSC"><a href="HTML/4 Series.html" target="_blank">4 Series</a></button>
+            </div>
+            <div class="col-sm">
+                <img id="hover" class="img-thumbnail img-fluid" src="Images/M4.jpg" alt="BMW M4" height="200" width="auto" />
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#dem"><a href="HTML/M4.html" target="_blank">M4 CS</a></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img id="hover" class="rounded-circle img-thumbnail img-fluid" src="Images/M5.jpg" alt="BMW M5" height="200" width="auto" />
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#demoS"><a href="HTML/M5.html" target="_blank">M5 CS</a></button>
+            </div>
+            <!-- The column of the grid will be small and will have pictures and text in it. The image will be thumbnail. -->
+            <div class="col-sm">
+                <img id="hover" class="rounded-circle img-thumbnail img-fluid" src="Images/6S.jpg" height="200" width="auto" alt="6 Series GT" />
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#SGT"><a href="HTML/6 Series.html" target="_blank">6 Series GT</a></button>
+            </div>
+            <div class="col-sm">
+                <img id="hover" class="rounded-circle img-thumbnail img-fluid" src="Images/7S.jpg" alt="BMW 7 Series" height="200" width="auto" />
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#MLi"><a href="HTML/7 Series.html" target="_blank">7 Series M760Li xDrive</a></button>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <!-- This is opening the grid again. -->
+                <div class="col-sm">
+                    <img id="hover" class="img-thumbnail img-fluid" src="Images/X3.jpg" alt="BMW X3" height="200" width="auto" />
+                    <br><br>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#X3"><a href="HTML/X3.html" target="_blank">X3</a></button>
+                </div>
+                <div class="col-sm">
+                    <img id="hover" class="img-thumbnail img-fluid" src="Images/X5M.jpg" alt="BMW X5M" height="200" width="auto" />
+                    <br><br>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#XM"><a href="HTML/X5.html" target="_blank">X5 M</a></button>
+                </div>
+                <div class="col-sm">
+                    <img id="hover" class="img-thumbnail img-fluid" src="Images/X6M.jpg" alt="BMW X6M" height="200" width="auto" />
+                    <br><br>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#X6M"><a href="HTML/X6.html" target="_blank">X6 M</a></button>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <!-- This is opening the grid again. -->
+                    <div class="col-sm">
+                        <img id="hover" class="rounded-circle img-thumbnail img-fluid" src="Images/M8.jpg" alt="BMW M8" height="200" width="auto" />
+                        <br><br>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#M8"><a href="HTML/M8.html" target="_blank">M8</a></button>
+                    </div>
+                    <div class="col-sm">
+                        <img id="hover" class="rounded-circle img-thumbnail" src="Images/I8.jpg" alt="BMW i8" height="200" width="auto" class="img-fluid" alt="i8" />
+                        <br><br>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#I8"><a href="HTML/I8.html" target="_blank">i8</a></button>
+                    </div>
+                    <div class="col-sm">
+                        <img id="hover" class="rounded-circle img-thumbnail img-fluid" src="Images/I8R.jpg" alt="BMW i8r" height="200" width="auto" />
+                        <br><br>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#I8R"><a href="HTML/I8R.html" target="_blank">i8R</a></button>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- Opening a hover table. When the cursor is on it, the line is highlighted. -->
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th style="border-style: double;">Car Model</th>
+                        <th style="border-style: double;">Prices Starting at:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- The items in the table. -->
+                        <td>BMW M140i</td>
+                        <td><button onclick="addItem()" id="addCart" type="button" class="btn btn-primary btn-sm">R715 100.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW 2 Series Convertible</td>
+                        <td><button onclick="addItem2()" id="addCart" type="button" class="btn btn-primary btn-sm">R639 700.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW M2 Competition Coupé</td>
+                        <td><button onclick="addItem3()" id="addCart" type="button" class="btn btn-primary btn-sm">R959 000.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW M3 Competition Sport</td>
+                        <td><button onclick="addItem4()" id="addCart" type="button" class="btn btn-primary btn-sm">R1 255 000.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW 4 Series Convertible</td>
+                        <td><button onclick="addItem5()" id="addCart" type="button" class="btn btn-primary btn-sm">R782 200.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW M4 Competition Sport</td>
+                        <td><button onclick="addItem6()" id="addCart" type="button" class="btn btn-primary btn-sm">R1 315 700.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW M5 Competition Sport</td>
+                        <td><button onclick="addItem7()" id="addCart" type="button" class="btn btn-primary btn-sm">R1 747 500.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW 6 Series GT</td>
+                        <td><button onclick="addItem8()" id="addCart" type="button" class="btn btn-primary btn-sm">R1 123 900.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW 7 Series M760Li xDrive</td>
+                        <td><button onclick="addItem9()" id="addCart" type="button" class="btn btn-primary btn-sm">R1 638 400.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW M8</td>
+                        <td><button onclick="addItem10()" id="addCart" type="button" class="btn btn-primary btn-sm">R1 872 900.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW i8 Coupé</td>
+                        <td><button onclick="addItem11()" id="addCart" type="button" class="btn btn-primary btn-sm">R2 095 200.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW i8 Roadster</td>
+                        <td><button onclick="addItem12()" id="addCart" type="button" class="btn btn-primary btn-sm">R2 329 300.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW X3</td>
+                        <td><button onclick="addItem13()" id="addCart" type="button" class="btn btn-primary btn-sm">R649 000.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW X5 M</td>
+                        <td><button onclick="addItem14()" id="addCart" type="button" class="btn btn-primary btn-sm">R1 996 300.00</button></td>
+                    </tr>
+                    <tr>
+                        <td>BMW X6 M</td>
+                        <td><button onclick="addItem15()" id="addCart" type="button" class="btn btn-primary btn-sm">R2 098 100.00</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- This is a text block. -->
+    <div class="bl1">
+        <p class="bl1">All vehicle prices are VAT INCLUSIVE</p>
+    </div>
+    <br>
+    <!-- The accordion function. This is a drop-down. -->
+    <dl class="accordion">
+        <dt><a href="">M140i</a></dt>
+        <dd>The M140i is part of the 1 Series class. It has a M-Performance Twin turbo 6-cylinder inline petrol engine which pushes out around 250kW of power and 500Nm torque. It is a 5-door car and is fitted with a 8-speed steptronic gearbox.</dd>
+        <dt><a href="">2 Series</a></dt>
+        <dd>With it's 3.0-litre displacement, the M Performance Twin Power Turbo inline 6-cylinder petrol engine of the BMW M240i is the top athlete in the convertible segment. Pushing out 250 kW of power and 500Nm of torque.</dd>
+        <dt><a href="">M2 CS</a></dt>
+        <dd>The M2 Competition Sport, being part of the M-family is the latest addition. This small coupe is fitted with a 6-cylinder inline Bi-turbo petrol engine, pushing out 302kW of power at 550Nm of torque. Fitted with M-performance technology it performs well.</dd>
+        <dt><a href="">M3 CS</a></dt>
+        <dd>M3 Sedan F80 Competition Sport, the most commmon and the most powerful of the M3-series. It has a 3.0 liter M Twin power turbo inline 6-cylinder petrol engine. It produces 338kW of power, fitted with M-steptronic dual clutch transmission.</dd>
+        <dt><a href="">4 Series</a></dt>
+        <dd>Powered by BMW TwinPower Turbo, TwinPower Turbo 4-cylinder or TwinPower Turbo 4-cylinder, it performs well. The customer are able to choose which of the three engines they'd want when they order their car. The optional 8-speed sport automatic transmission ensures maximum levels of dynamics, efficiency and ride comfort. Short shifting times improve the acceleration values while the fine spacing of the eight gears permits barely noticeable gear changing.</dd>
+        <dt><a href="">M4 CS</a></dt>
+        <dd>The M4 Competition Sport, one of the latest add ons to the M-Family is a sporty beast. Same as the F80 M3, it is powered by a 3.0 litre M Twin power turbo inline 6-cylinder petrol engine. The engine produces 317kW of power with 550Nm of torque. The twin-turbo direct injection and M tuning makes the slightest touch on the accelerator give a vigorous thrust, with excellent traction.</dd>
+        <dt><a href="">M5 CS</a></dt>
+        <dd>With the increased upgrade of power the M5 Competition pushes out 441kW of power along with 750Nm of torque. This is a major upgrade and the quickest of the set, being that it has so much torque. It is all powered by a M TwinPower Turbo 8-cylinder petrol engine. Installed is a 8-speed M Steptronic gearbox along with xDrive.</dd>
+        <dt><a href="">6 Series GT</a></dt>
+        <dd>Taking the place of the M6, the new updated 6 Series Gran Turismo, is the first of its kind. With a 4.0 litre turbocharged inline petrol engine with xDrive, it produces 250kW of power accompanied by 450Nm of torque. The design and aesthetic of the car is to drive long distances in style and comfort.</dd>
+        <dt><a href="">M760Li xDrive</a></dt>
+        <dd>Featuring a 12-cylinder 6.6 litre engine with M Performance TwinPower Turbo technology, the BMW M760Li xDrive is known as the ultimate 7 Series. Powered by the V12 engine it produces 448kW of power with a maximum of 800Nm of torque at 5000rpm's.</dd>
+        <dt><a href="">M8</a></dt>
+        <dd>The latest M on the block, the M8 powered by a twin-turbo 4.4-litre V8 developing 460kW of power and 750Nm of torque. An eight-speed M Steptronic transmission, which will produce power to all four wheels using Munich-based firm’s rear-biased M xDrive. It is believed to be the most powerful engine made by BMW yet.</dd>
+        <dt><a href="">i8 Coupé</a></dt>
+        <dd>The first hybrid produced by BMW performs to its ability. The coupé produces 275kW of power and 570Nm of torque. It speeds up from 0-100 km/h within 4.4s. It is the ultimate stylish futuristic car.</dd>
+        <dt><a href="">i8 Roadster</a></dt>
+        <dd>The BMW i8 Roadster reveals itself as futuristic right down to the last detail. Its progressive lines speak a formal language that can hardly be more dynamic. The most striking feature: the imposing lightweight carbon-fibre hinged doors, which can be opened comfortably. The athletic front continues to display the individual character of the car and proudly bears the BMW double kidney, flanked by full-LED headlights and redesigned Air Curtains. Pushing out 275kW of power along with 570Nm of torque at 6000 rpm's.</dd>
+        <dt><a href="">X3</a></dt>
+        <dd>The M Performance TwinPower Turbo inline 6-cylinder petrol engine of the BMW X3 M40i catapults the vehicle from zero to one hundred in an impressive 4.8 seconds. A maximum torque of 500 Nm and 265 kW of power it performs well being a 4.0 litre engine.</dd>
+        <dt><a href="">X5 M</a></dt>
+        <dd>This model car combines the M-Sport with a X-model car. Powered by a M TwinPower Turbo 8-cylinder petrol engine, with a 8-speed M Steptronic and M-specific xDrive, you'll get the sheer driving experience that BMW offers. Producing around 423kW of power with 750Nm of torque it goes from 0-100km/h in 4.2s.</dd>
+        <dt><a href="">X6 M</a></dt>
+        <dd>The BMW X6 M boasts two high-rev TwinScroll turbochargers. With its massive torque of up to 750 Nm, the 4.4 litre, 423 kW M TwinPower Turbo 8-cylinder petrol engine powers the BMW X6 M forward with minimum effort. It accelerates the vehicle from 0 to 100 km/h in just 4.2 seconds.</dd>
+    </dl>
+    <br>
+    <br>
+    <img id="BMWM" src="Images/M.jpg" alt="BMW M" height="auto" width="1000" class="img-fluid" />
+    <br>
+    <div class="btn-group" style="margin-left: 550px">
+        <button id="btn">Hide</button>
+        <button id="btn2">Stop</button>
+        <button id="btn3">Slide</button>
+    </div>
+    <!-- This is the reviews. -->
+    <div class="cont">
+        <img class="styl" src="Images/FC.png" alt="Avatar">
+        <h4>Chris Decker</h4>
+        <p class="ceo">CEO at Horizon Enterprises.</p>
+        <p class="ceo">"I purchased my BMW M5 from IMO BMW, and their service is outstanding. I'm very happy with the treatment and will be purchasing my next BMW through IMO BMW."</p>
+    </div>
+    <div class="cont">
+        <img class="styl" src="Images/MDS.png" alt="Avatar">
+        <h4>Scott Grant</h4>
+        <p class="ceo">Manager at Pfister.</p>
+        <p class="ceo">"No better dealership than IMO BMW."</p>
+    </div>
+    <!-- Start of the form. -->
+    <p>Feel free to contact us or drop your details below and we'll contact you.</p>
+    <form class="form-horizontal">
+        <!-- This will put the text in the colour stated below. -->
+        <label><b>My E-mail address is:</b></label><br>
+        <a style="color:#4d0000" href="mailto:mosesimtiyaaz@gmail.com">Imtiyaaz</a><br>
+        <label><b>My Contact Number:</b></label><br>
+        <a style="color:#4d0000" href="tel:0716724663">0716724663</a><br>
+        <div class="form-group">
+            <label><b>First name:</b></label><br>
+            <input type="text" name="firstname" value="Eg. Lucifer">
+        </div>
+        <div class="form-group">
+            <label><b>Last name:</b></label><br>
+            <input type="text" name="lastname" value="Eg. Morningstar">
+            <br>
+        </div>
+        <div class="form-group">
+            <label><b>E-mail:</b></label><br>
+            <input type="email" name="email" value="Eg. lucimstar@gmail.com">
+            <br>
+        </div>
+        <div class="form-group">
+            <label><b>Contact Number:</b></label><br>
+            <input type="Cnumber" name="number" value="Eg. 0714563146">
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio" checked>CPT</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">JHB</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">DBN</label>
+        </div>
+        <div class="radio disabled">
+            <label><input type="radio" name="optradio" disabled>LAX</label>
+        </div>
+        <button type="submit" class="btn-outline-secondary">Submit</button>
+    </form>
+    </div>
+    <!-- This is a back to the top button. -->
+    <a class="btn" href="#mainHeading">Back To Top</a>
+    <!-- This is the Java Script stylesheet for the buttons to work. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="JS/Catalogue.js"></script>
+    <!-- This is acknowledgements for using pictures. -->
+    <h2>Acknowledgements:</h2>
+    <p><a href="https://www.bmw.co.za/en/index.html" target="_blank">BMW ZA</a></p>
+    <!-- This is a personal footer. -->
+    <footer>
+        <p> &copy; IMO BMW.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by <a href="Catalogue.html">Imtiyaaz Moses</a></p>
+        <p>Last updated: 12 July 2019</p>
+    </footer>
+</body>
+
+</html>

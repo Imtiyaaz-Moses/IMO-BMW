@@ -1,0 +1,80 @@
+<!-- Compulsory Task -->
+<!DOCTYPE html>
+<!-- This will tell the browser which version of html to use. -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Metadata will be contained under head -->
+    <title>M4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- This is a style sheet that opens the css file. -->
+    <link rel="stylesheet" type="text/css" href="../CSS/CatalogueStyle.css">
+    <link rel="icon" href="../Images/BMWfav.png" type="image/png" sizes="16x16">
+    <!-- This is closing the head -->
+</head>
+
+<body onload="setbackground();">
+    <header>
+        <!-- This is the heading of the page.  -->
+        <h1 id="mainHeading">Welcome to IMO BMW<a href="../Catalogue.html"><img src="../Images/SDP.jpg" height="100" width="auto" class="float-sm-right" class="img-fluid" alt="BMW Sheer Pleasure"></a></h1>
+    </header>
+    <!-- The 'img-fluid' function will allow the images to fit the size of the screen, eg. how much the page is zoomed in. The images will scale up or down to the prefered size. -->
+    <img id="mainPic" src="../Images/Logo.jpg" alt="BMW Logo" height="200" width="auto" class="img-fluid" />
+    <h4>Bayerische Motoren Werke | Bavarian Motor Works</h4>
+    <div class="bl1">
+        <a href="../HTML/Checkout.html" target="_blank"><img id="cart" src="../Images/cart.png" height="75" width="auto" class="float-sm-right" class="img-fluid" alt="BMW Cart" /></a>
+        <p class="bl1">Sheer<br>Driving Pleasure</p>
+    </div>
+    <nav>
+        <!-- These are the elements of the nav bar and are split by a '|' to show which is which. -->
+        <a href="../Catalogue.html" style="color:white">IMO</a> |
+        <a href="../Cars.html" style="color:white">Cars</a> |
+        <a href="../Us.html" style="color: white">About</a> |
+        <a href="../Landing Page.html" style="color: white">Landing Page</a> |
+    </nav>
+    <br>
+    <h1>BMW M4</h1>
+    <br>
+    <img class="car img-fluid" src="../Images/M4M.jpg" alt="BMW M4M" height="auto" width="1250" />
+    <br><br>
+    <div id="dem">
+        <h2>Adrenaline Comes With 4 Seats.<br>The all-new BMW M4 CS</h2>
+        The new BMW M4 CS is a special model from BMW M GmbH, in the tradition of high-performance vehicles originating from the BMW M3 of the E30 Series. With only a limited production run available, the BMW M4 CS gene from the BMW M4 GTS is united with the day-to-day suitability of the four-seat BMW M4 Coupé. Full of innovative M technologies and efficient, lightweight carbon-fibre components, this model athlete can complete the legendary “Nordschleife” (North Loop) of the Nürburgring in an impressive 7:38 minutes, without any sacrifice to its day-to-day usefulness. High-performance on the streets – redefined.
+        <h4>Pure dynamics.</h4>
+        The distinctive front end expresses uncompromising athleticism through its flat double kidney grille with black-trimmed slats and the characteristic double LED headlights. The three-part front apron with large air inlets highlights the dynamics and ensures efficient cooling for the six-cylinder, high-performance engine, as well as the M Compound brakes or the optional M Carbon ceramic brake. The new model-specific front splitter made of a light exposed carbon-fibre is street-legal and reduces front-axis lift for an additional dynamic driving boost.
+        <h4>Impelling power.</h4>
+        The M TwinPower Turbo inline 6-cylinder petrol engine in the BMW M4 CS makes super sports car performance possible. With 338kW and 600 Nm torque, the high-performance engine accelerates the extreme sports car from 0 to 100 km/h in 3.9 seconds and reaches an electronically limited top speed of 280 km/h.
+        <h4>Athletic lightweight construction.</h4>
+        Innovative lightweight components characterise the athletic lines of the BMW M4 CS. The CFRP engine bonnet, known from the BMW M4 GTS, is an additional 25 per cent lighter than the already weight-optimised aluminium bonnet of the BMW M4 Coupé. The slightly retracted CFRP roof is six kilograms lighter than a metal roof and lowers the centre of gravity for excellent agility. Also made of carbon-fibre, the daily-driving suitable Gurney flap on the rear spoiler substantially reduces rear axel lift when compared to the M4 with the Competition Package.
+        <h4>Perfect road grip.</h4>
+        The ten-spoke light-alloy wheels in Orbit Grey were specially designed for the BMW M4 CS and are based on the design of the successful M4 racecar of the Deutsche Tourenwagen Masters (DTM). The forged, weight-optimised wheels are standard for the series, and come equipped with mixed tyres: Michelin Pilot Sport Cup 2 with the dimensions 265/35 R 19 are used up front with 285/30 R 20 in the rear. For even greater day-to-day usefulness, Michelin sport tyres with stronger profiles are also available as an option.
+        <h4>Characteristic rear.</h4>
+        The muscular rear of the BMW M4 CS is characterised by a spoiler with a Gurney flap made of exposed carbon-fibre. It reduces rear-axel lift to optimise driving behaviour, particularly at higher speeds. The M diffuser made of carbon-fibre reinforced plastic (CFRP) provides an eye-catching finish to the rear. The M logo also appears on the stainless steel M double tailpipes of the sporty dual exhaust system on the BMW M4 CS. Like the BMW M4 GTS, the L-form rear lights utilise futuristic OLED technology, and fascinate with dynamic light animation and 3D effects.
+        <h4><b><i>338 kW</i></b></h4>
+        With a power of 338 kW and 600 Nm torque, the high-performance M TwinPower Turbo inline 6-cylinder petrol engine rapidly accelerates the BMW M4 CS from 0 to 100 km/h in 3.9* seconds and reaches a top speed of 280 km/h.
+        The excellent driving dynamics of the new BMW M4 CS is not based soley on its spontaneous, sophisticated and powerful engine. It also stands out with the integration of many additional high-performance components. The electromechanical M Servotronic steering, the Active M Differential and an especially sporty M double-clutch transmission make for exceptional performance both on the road and on the track.
+        Top-notch agility, driving precision and day-to-day suitability is provided for with the specially tuned Adaptive M suspension with three different driving modes. The modes enable drivers to specifically adapt the suspension according to road conditions and driving style.
+    </div>
+    <br>
+    <p>Below is the starting price of the vehicle.</p>
+    <button onclick="addItem6()" id="addCart" type="button" class="btn btn-primary btn-sm">R1 315 700.00</button>
+    <br><br><br><br>
+    <!-- This is the Java Script stylesheet for the buttons to work. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="../JS/Catalogue.js"></script>
+    <!-- This is acknowledgements for using pictures. -->
+    <h2>Acknowledgements:</h2>
+    <p><a href="https://www.bmw.co.za/en/index.html" target="_blank">BMW ZA</a></p>
+    <!-- This is a personal footer. -->
+    <footer>
+        <p> &copy; IMO BMW.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by <a href="../Catalogue.html">Imtiyaaz Moses</a></p>
+        <p>Last updated: 12 July 2019</p>
+    </footer>
+    <a class="btn" href="#mainHeading">Back To Top</a>
+</body>
+
+</html>

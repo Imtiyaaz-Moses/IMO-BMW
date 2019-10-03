@@ -1,0 +1,82 @@
+<!-- Compulsory Task -->
+<!DOCTYPE html>
+<!-- This will tell the browser which version of html to use. -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Metadata will be contained under head -->
+    <title>M5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- This is a style sheet that opens the css file. -->
+    <link rel="stylesheet" type="text/css" href="../CSS/CatalogueStyle.css">
+    <link rel="icon" href="../Images/BMWfav.png" type="image/png" sizes="16x16">
+    <!-- This is closing the head -->
+</head>
+
+<body onload="setbackground();">
+    <header>
+        <!-- This is the heading of the page.  -->
+        <h1 id="mainHeading">Welcome to IMO BMW<a href="../Catalogue.html"><img src="../Images/SDP.jpg" height="100" width="auto" class="float-sm-right" class="img-fluid" alt="BMW Sheer Pleasure"></a></h1>
+    </header>
+    <!-- The 'img-fluid' function will allow the images to fit the size of the screen, eg. how much the page is zoomed in. The images will scale up or down to the prefered size. -->
+    <img id="mainPic" src="../Images/Logo.jpg" alt="BMW Logo" height="200" width="auto" class="img-fluid" />
+    <h4>Bayerische Motoren Werke | Bavarian Motor Works</h4>
+    <div class="bl1">
+        <a href="../HTML/Checkout.html" target="_blank"><img id="cart" src="../Images/cart.png" height="75" width="auto" class="float-sm-right" class="img-fluid" alt="BMW Cart" /></a>
+        <p class="bl1">Sheer<br>Driving Pleasure</p>
+    </div>
+    <nav>
+        <!-- These are the elements of the nav bar and are split by a '|' to show which is which. -->
+        <a href="../Catalogue.html" style="color:white">IMO</a> |
+        <a href="../Cars.html" style="color:white">Cars</a> |
+        <a href="../Us.html" style="color: white">About</a> |
+        <a href="../Landing Page.html" style="color: white">Landing Page</a> |
+    </nav>
+    <br>
+    <h1>BMW M5</h1>
+    <br>
+    <img class="car img-fluid" src="../Images/M5M.jpg" alt="BMW M5M" height="auto" width="1250" />
+    <br><br>
+    <div id="demoS">
+        <h2>Sharper Than Ever.<br>The M5 Competition Sport.</h2>
+        Excitingly and elegantly shaped. More powerful than ever. The new generation of the BMW M5 is a statement of supreme engineering skill and innovative driving intelligence. For hitherto unimagined dimensions of driving dynamics up to the limits. Full of state-of-the-art technologies that make the everyday business routine safer and more comfortable. The innovative all-wheel drive system M xDrive of the powerful all-new BMW M5 with its 441 kW engine turns the driver into the self-assured pilot of a high-performance sports sedan with unbelievable power, precision and agility – pure M driving pleasure on a new level.
+        <h4>M design.</h4>
+        With just a few lines, the clear, M specific design of the BMW M5 signals consistent dynamism – from every angle. BMW Individual high-gloss Shadow Line exclusively emphasises the athletic character.
+        <h4>M exterior mirror.</h4>
+        The M specific exterior mirrors in double-bridged design and with additional integrated LED indicators are a significant part of the sporty and dynamic M design and convey a sense of precision engineering down to the last detail.
+        <h4>M kidney grille.</h4>
+        The striking M kidney grille with M5 logo and high-gloss Black double slats makes it unmistakably clear that the powerful engine behind the sporty front end can deliver a breathtaking performance.
+        <h4>M front bonnet.</h4>
+        Two characteristic creases shape the bonnet of the all-new BMW M5 designed in lightweight aluminium. The design of the CFRP roof picks up the M specific lines and continues them systematically to the rear.
+        <h4>M Carbon roof.</h4>
+        As part of the intelligent lightweight design concept, the M Carbon roof made of carbon fibre reinforced plastic (CFRP) and the aluminium bonnet help reduce the vehicle weight, improving driving dynamics.
+        <h4>M gills.</h4>
+        The characteristic M side air vent element in high-gloss Black with the M5 model designation, which adds a pronounced three-dimensional athletic touch, underscores the dynamic combination of technical perfection and breathtaking design that has been synonymous with M vehicles since day one.
+        <h4>20" light alloy wheel 789 M.</h4>
+        The exclusively forged 20'' M light alloy wheels 789 M in bicolor look with mixed tyres featuring a dynamic Y-spoke design underline the athleticism of the BMW M5 Competition.
+        <h4>M twin tailpipes.</h4>
+        The typical M twin tailpipes, the central diffuser and the rear apron in high-gloss Black are an unmistakeable display of the sporting aspirations of the BMW M5 Competition.
+    </div>
+    <br>
+    <p>Below is the starting price of the vehicle.</p>
+    <button onclick="addItem7()" id="addCart" type="button" class="btn btn-primary btn-sm">R1 747 500.00</button>
+    <br><br><br><br>
+    <!-- This is the Java Script stylesheet for the buttons to work. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="../JS/Catalogue.js"></script>
+    <!-- This is acknowledgements for using pictures. -->
+    <h2>Acknowledgements:</h2>
+    <p><a href="https://www.bmw.co.za/en/index.html" target="_blank">BMW ZA</a></p>
+    <!-- This is a personal footer. -->
+    <footer>
+        <p> &copy; IMO BMW.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by <a href="../Catalogue.html">Imtiyaaz Moses</a></p>
+        <p>Last updated: 12 July 2019</p>
+    </footer>
+    <a class="btn" href="#mainHeading">Back To Top</a>
+</body>
+
+</html>
